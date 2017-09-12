@@ -12,11 +12,11 @@ module LogPusher
     end
 
     def get_auth_key : String
-      auth_key = create_auth_key_string()
+      auth_key = create_auth_key_string
       Base64.strict_encode(auth_key)
     end
 
-    def create_auth_key_string : String
+    private def create_auth_key_string : String
       "#{@email}#{SEPERATOR}#{@hashed_password}#{SEPERATOR}#{Time.new.to_s(DATE_FORMAT)}"
     end
   end
