@@ -1,0 +1,9 @@
+name: logpusher
+version: 0.1.0
+
+authors:
+  - İzni Burak Demirtaş <info@burakdemirtas.org>
+
+crystal: 0.23.1
+
+license: MIT
